@@ -73,7 +73,7 @@ function sendAutoReply(e) {
 
 function reply_(sheet, row, testTo) {
   const headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getDisplayValues()[0];
-  const values = sheet.getRange(row, 1, 1, headers.length).getDisplayValues()[0];
+  let values = sheet.getRange(row, 1, 1, headers.length).getDisplayValues()[0];
   const emailIdx = findEmailCol_(headers);
   const cell = sheet.getRange(row, emailIdx + 1);
   const to = String(values[emailIdx] || '').trim();
@@ -83,6 +83,14 @@ function reply_(sheet, row, testTo) {
     const draft = GmailApp.getDrafts().find(d => d.getMessage().getSubject() === subject);
     if (!draft) throw new Error('Gmail draft "' + subject + '" not found');
     const msg = draft.getMessage();
+    // {{Edit Link}} comes from the Form Edit Links script, which runs on the same submit; give it a moment.
+    const linkIdx = headers.findIndex(h => h.trim() === 'Edit Link');
+    if (linkIdx !== -1 && /{{\s*Edit Link\s*}}/.test(msg.getSubject() + msg.getBody())) {
+      for (let i = 0; i < 10 && !values[linkIdx]; i++) {
+        Utilities.sleep(3000);
+        values = sheet.getRange(row, 1, 1, headers.length).getDisplayValues()[0];
+      }
+    }
     GmailApp.sendEmail(testTo || to, fill_(msg.getSubject(), headers, values), '', {
       htmlBody: fill_(msg.getBody(), headers, values, true),
       attachments: msg.getAttachments({ includeInlineImages: false }),

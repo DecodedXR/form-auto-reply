@@ -25,6 +25,8 @@ New to this? Read the [step-by-step guide](https://decodedxr.github.io/form-auto
 
 From then on, every new response gets the email within a few seconds.
 
+**Edit links:** to include a link that lets each person change their answers, add [Form Edit Links](https://github.com/DecodedXR/form-edit-links) to the same sheet and put `{{Edit Link}}` in your draft. Auto-Reply waits a few seconds for the link to arrive.
+
 ## Notes
 
 - Keep the draft in Gmail. The script reads it every time, so editing the draft changes future replies.
