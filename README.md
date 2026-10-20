@@ -35,6 +35,7 @@ From then on, every new response gets the email within a few seconds.
 
 ## More free Google tools
 
+- [Form Prefill Links](https://github.com/DecodedXR/form-prefill-links): a pre-filled Google Form link for every row.
 - [Sheets to Calendar](https://github.com/DecodedXR/sheets-to-calendar): rows become Google Calendar events that stay in sync.
 - [Sheets Mail Merge](https://github.com/DecodedXR/sheets-mail-merge): a personalized email to every row, with per-person attachments.
 - [Sheets Deadline Reminders](https://github.com/DecodedXR/sheets-deadline-reminders): automatic emails before a due date.
