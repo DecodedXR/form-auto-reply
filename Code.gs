@@ -1,3 +1,5 @@
+/** @OnlyCurrentDoc */ // asks Google for access to this spreadsheet only, not all your sheets
+
 /**
  * Form Auto-Reply: send every Google Form respondent a personalized email of your own,
  * written as a Gmail draft with {{Question Title}} placeholders.
