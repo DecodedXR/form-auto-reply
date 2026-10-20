@@ -2,6 +2,7 @@
 title: How to send a custom confirmation email from Google Forms (free)
 description: Email every Google Form respondent your own personalized message with their answers, instead of Google's plain response copy. Free Apps Script, no add-on.
 ---
+{% raw %}
 
 # How to send a custom confirmation email from Google Forms (free)
 
@@ -67,3 +68,4 @@ From now on, every respondent gets your email a few seconds after they submit. A
 ---
 
 [Get the script on GitHub](https://github.com/DecodedXR/form-auto-reply) · Also free: [Mail Merge for Google Sheets](https://decodedxr.github.io/sheets-mail-merge/free-mail-merge-google-sheets.html) · [Doc Merge: PDFs from Google Sheets](https://decodedxr.github.io/sheets-doc-merge/generate-pdfs-certificates-from-google-sheets.html)
+{% endraw %}
