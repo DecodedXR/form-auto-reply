@@ -1,6 +1,7 @@
 ---
 title: How to send a custom confirmation email from Google Forms (free)
 description: Email every Google Form respondent your own personalized message with their answers, instead of Google's plain response copy. Free Apps Script, no add-on.
+image: https://decodedxr.github.io/form-auto-reply/assets/cover.png
 ---
 {% raw %}
 

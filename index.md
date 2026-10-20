@@ -1,6 +1,7 @@
 ---
 title: Free Form Auto-Reply for Google Forms
 description: Send every Google Form respondent your own personalized email, written as a Gmail draft. One free Apps Script file, no add-on.
+image: https://decodedxr.github.io/form-auto-reply/assets/cover.png
 ---
 
 # Free Form Auto-Reply for Google Forms
