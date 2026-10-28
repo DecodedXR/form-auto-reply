@@ -13,6 +13,7 @@ Send every Google Form respondent your own personalized email, written as a Gmai
 ## Guides
 
 - [How to send a custom confirmation email from Google Forms](google-forms-custom-confirmation-email.html)
+- [A free alternative to Email Notifications for Google Forms](email-notifications-for-google-forms-alternative.html)
 
 ## Get it
 
