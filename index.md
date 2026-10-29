@@ -18,3 +18,5 @@ Send every Google Form respondent your own personalized email, written as a Gmai
 ## Get it
 
 The script and full instructions are on GitHub: [DecodedXR/form-auto-reply](https://github.com/DecodedXR/form-auto-reply). It's MIT licensed and free.
+
+Need it to work a bit differently for your sheet? [Get a custom version written for you ($49)](https://decodedxr.github.io/free-google-sheets-scripts/custom-google-sheets-script.html): tested, within 3 days, or a full refund.
